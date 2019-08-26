@@ -140,11 +140,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5563764391501086894, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
-        type: 3}
-      propertyPath: star_Timer_Value
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 6610395803431205928, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -199,6 +194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563764391501086894, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
+        type: 3}
+      propertyPath: star_Timer_Value
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
@@ -1173,6 +1173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1125248893}
   - component: {fileID: 1125248894}
+  - component: {fileID: 1125248895}
   m_Layer: 0
   m_Name: Object_detection
   m_TagString: Untagged
@@ -1218,6 +1219,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: 0
+--- !u!114 &1125248895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125248892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62f45f6312301046bfd66d5bd69c072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Main_menu
 --- !u!1 &1245617282
 GameObject:
   m_ObjectHideFlags: 0
