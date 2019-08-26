@@ -14,57 +14,64 @@ public class Ball_controller_script : MonoBehaviour
 
     private float paint_wait = 0;
 
+    private GameObject gameController;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         movementVector = Vector2.zero;
+
+        //Alex's Edits feel free to change
+        gameController = GameObject.FindGameObjectWithTag("GameController");
     }
 
     void Update()
     {
-
-        if (transform.position.x > 8.0f)
+        EventController EC = gameController.GetComponent<EventController>();
+        if (EC.miniGame_Start)
         {
-            movementVector.x = -1;
-        }
-        else if(transform.position.x < -8.0f)
-        {
-            movementVector.x = 1;
-        }
-        else
-        {
-            movementVector.x = Input.GetAxis("Horizontal");
-        }
-
-
-        if (transform.position.y > 6.0f)
-        {
-            movementVector.y = -1;
-        }
-        else if (transform.position.y < -2.0f)
-        {
-            movementVector.y = 1;
-        }
-        else
-        {
-            movementVector.y = Input.GetAxis("Vertical");
-        }
-
-        paint_wait += 15.0f * Time.deltaTime;
-
-        rb.velocity = movementVector * speed * Time.deltaTime;
-
-        if ((movementVector.x > 0.3f || movementVector.x < -0.3f) || (movementVector.y > 0.3f || movementVector.y < -0.3f))
-        { 
-            if (paint_wait > 1.0f)
+            if (transform.position.x > 8.0f)
             {
-
-                Instantiate(paint_smoge, transform.position, transform.rotation);
-
-                paint_wait = 0.00f;
+                movementVector.x = -1;
             }
-         }
+            else if (transform.position.x < -8.0f)
+            {
+                movementVector.x = 1;
+            }
+            else
+            {
+                movementVector.x = Input.GetAxis("Horizontal");
+            }
 
- 
+
+            if (transform.position.y > 6.0f)
+            {
+                movementVector.y = -1;
+            }
+            else if (transform.position.y < -2.0f)
+            {
+                movementVector.y = 1;
+            }
+            else
+            {
+                movementVector.y = Input.GetAxis("Vertical");
+            }
+
+            paint_wait += 15.0f * Time.deltaTime;
+
+            rb.velocity = movementVector * speed * Time.deltaTime;
+
+            if ((movementVector.x > 0.3f || movementVector.x < -0.3f) || (movementVector.y > 0.3f || movementVector.y < -0.3f))
+            {
+                if (paint_wait > 1.0f)
+                {
+
+                    Instantiate(paint_smoge, transform.position, transform.rotation);
+
+                    paint_wait = 0.00f;
+                }
+            }
+
+        }
     }
 }

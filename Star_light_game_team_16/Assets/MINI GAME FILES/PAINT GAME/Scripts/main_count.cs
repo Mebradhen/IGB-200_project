@@ -6,18 +6,21 @@ public class main_count : MonoBehaviour
 {
 
     public int count = 0;
+    private GameObject gameController;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameController = GameObject.FindGameObjectWithTag("GameController");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (count >= 11) { 
-            Debug.Log("WON!!!!!!!!!!!!!!!!" + count.ToString());
+        EventController EC = gameController.GetComponent<EventController>();
+
+        if (count >= 11) {
+            EC.miniGame_Ended = true;
         }
        
     }
