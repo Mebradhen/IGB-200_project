@@ -19,9 +19,13 @@ public class Script_camera : MonoBehaviour
     [SerializeField]
     GameObject The_button_intro;
 
+    [SerializeField]
+    GameObject The_options_intro;
+
     public int Stage_menu = 1;
 
-    void Start() { 
+    void Start()
+    {
 
 
     }
@@ -35,30 +39,25 @@ public class Script_camera : MonoBehaviour
                 intro();
                 break;
 
-            case 2:               
+            case 2:
                 menu();
                 break;
-        }  
+        }
     }
 
     void intro()
     {
         if (timer_start > 20.0f)
         {
-            if (transform.rotation.y > 0.05f)
+            this.GetComponent<Animator>().SetBool("Title_screen_intro_move_0", true);
+
+
+            if (transform.rotation.y < 0.25f)
             {
-
-                distance_speed = (transform.rotation.y / 55) * 4000;
-
-                rotateValue = new Vector3(x, y + distance_speed * Time.deltaTime, 0);
-
-                transform.eulerAngles = transform.eulerAngles - rotateValue;
-
-                if (transform.rotation.y < 0.25f) { 
-                    The_logo_intro.GetComponent<Animator>().SetBool("Logo_menu_bool", true);
-                }
+                The_logo_intro.GetComponent<Animator>().SetBool("Logo_menu_bool", true);
             }
-            else
+
+            if (transform.rotation.y < 0.15f)
             {
                 The_button_intro.GetComponent<Animator>().SetBool("Button_show_menu", true);
 
@@ -74,24 +73,12 @@ public class Script_camera : MonoBehaviour
 
 
     void menu()
-    {    
-
-        if (transform.position.y > -20.0f)
-        {
-            
-            distance_speed = distance_speed - 5 * Time.deltaTime;
-   
-            transform.position = new Vector3(0.0f, 87.12735f - distance_speed * distance_speed, 0.0f);
-
-        }
-        else
-        {
-
-        }
+    {
+        this.GetComponent<Animator>().SetBool("Title_screen_intro_move_1", true);
     }
 
 
-        void Enter_menu()
+    void Enter_menu()
     {
 
         if (Input.GetKeyDown(KeyCode.Return))
@@ -109,5 +96,12 @@ public class Script_camera : MonoBehaviour
             timer_start = 0.0f;
             distance_speed = 0.0f;
         }
+    }
+
+
+
+    public void camera_start_game()
+    {
+        this.GetComponent<Animator>().SetBool("Title_screen_intro_move_2", true);
     }
 }
