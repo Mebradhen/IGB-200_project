@@ -10,10 +10,23 @@ public class Script_camera : MonoBehaviour
     private Vector3 rotateValue, positionValue;
     private float timer_start = 0.0f;
 
+    [SerializeField]
+    Animator[] animators;
+
+    [SerializeField]
+    GameObject The_logo_intro;
+
+    [SerializeField]
+    GameObject The_button_intro;
+
     public int Stage_menu = 1;
 
+    void Start() { 
 
-     void Update()
+
+    }
+
+    void Update()
     {
 
         switch (Stage_menu)
@@ -22,7 +35,7 @@ public class Script_camera : MonoBehaviour
                 intro();
                 break;
 
-            case 2:
+            case 2:               
                 menu();
                 break;
         }  
@@ -40,9 +53,15 @@ public class Script_camera : MonoBehaviour
                 rotateValue = new Vector3(x, y + distance_speed * Time.deltaTime, 0);
 
                 transform.eulerAngles = transform.eulerAngles - rotateValue;
+
+                if (transform.rotation.y < 0.25f) { 
+                    The_logo_intro.GetComponent<Animator>().SetBool("Logo_menu_bool", true);
+                }
             }
             else
             {
+                The_button_intro.GetComponent<Animator>().SetBool("Button_show_menu", true);
+
                 Enter_menu();
             }
 
@@ -55,10 +74,9 @@ public class Script_camera : MonoBehaviour
 
 
     void menu()
-    {
+    {    
 
-
-        if(transform.position.y > -20.0f)
+        if (transform.position.y > -20.0f)
         {
             
             distance_speed = distance_speed - 5 * Time.deltaTime;
