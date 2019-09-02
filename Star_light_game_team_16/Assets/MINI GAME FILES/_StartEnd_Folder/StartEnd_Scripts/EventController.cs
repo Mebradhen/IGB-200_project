@@ -72,7 +72,8 @@ public class EventController : MonoBehaviour
     GameObject sliderStar2;
     [SerializeField]
     GameObject sliderStar3;
-
+    [SerializeField]
+    GameObject sliderStar_white;
     private void Start()
     {
         //set the referecnce on start

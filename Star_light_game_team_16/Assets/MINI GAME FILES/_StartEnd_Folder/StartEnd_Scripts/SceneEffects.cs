@@ -9,6 +9,7 @@ public class SceneEffects : MonoBehaviour
 
     public
     int star_Achived;
+    float star_timer;
 
     [SerializeField]
     GameObject effect_Ready;
@@ -22,6 +23,10 @@ public class SceneEffects : MonoBehaviour
     GameObject effect_Star2;
     [SerializeField]
     GameObject effect_Star3;
+    [SerializeField]
+    GameObject effect_White;
+
+
 
     [SerializeField]
     GameObject effect_Exit;
@@ -44,32 +49,42 @@ public class SceneEffects : MonoBehaviour
     void PlayEffect_Great()
     {
         Instantiate(effect_Great, miniGameController.transform);
+        Instantiate(effect_White, miniGameController.transform);
     }
 
     void PlayEffect_Star()
     {
-
         star_Achived = miniGameController.GetComponent<EventController>().stars_Achived;
 
-        if (star_Achived == 1)
+        if (star_Achived > 0)
         {
             Instantiate(effect_Star1, miniGameController.transform);
         }
-  
-        if (star_Achived == 2)
-        {
-            Instantiate(effect_Star1, miniGameController.transform);
-            Instantiate(effect_Star2, miniGameController.transform);
-        }
+    }
 
-        if (star_Achived == 3)
+    void PlayEffect_Star_2()
+    {
+        star_Achived = miniGameController.GetComponent<EventController>().stars_Achived;
+
+        if (star_Achived > 1)
         {
-            Instantiate(effect_Star1, miniGameController.transform);
             Instantiate(effect_Star2, miniGameController.transform);
-            Instantiate(effect_Star3, miniGameController.transform);
         }
 
     }
+
+    void PlayEffect_Star_3()
+    {
+        star_Achived = miniGameController.GetComponent<EventController>().stars_Achived;
+
+        if (star_Achived > 2 )
+        {
+            Instantiate(effect_Star3, miniGameController.transform);
+        }
+    }
+
+
+
 
     void StartGame()
     { 
