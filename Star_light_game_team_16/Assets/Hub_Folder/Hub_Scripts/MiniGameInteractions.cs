@@ -10,7 +10,8 @@ public class MiniGameInteractions : MonoBehaviour
     float timer = 2;
 
     [SerializeField]
-    GameObject HubControllerGameObject;
+    GameObject hubControllerGameObject;
+    GameObject sceneGameObject;
 
     [SerializeField]
     string sceneName; 
@@ -18,7 +19,8 @@ public class MiniGameInteractions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HubControllerGameObject = GameObject.FindGameObjectWithTag("GameController");
+        hubControllerGameObject = GameObject.FindGameObjectWithTag("GameController");
+        sceneGameObject = GameObject.FindGameObjectWithTag("SceneController");
     }
 
     // Update is called once per frame
@@ -29,7 +31,8 @@ public class MiniGameInteractions : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer < 0)
             {
-                SceneManager.LoadScene(sceneName);
+                sceneGameObject.GetComponent<SwapScenes>().sceneName = sceneName;
+                sceneGameObject.GetComponent<SwapScenes>().returnToScene = true;
             }
         }
     }
@@ -46,7 +49,7 @@ public class MiniGameInteractions : MonoBehaviour
 
     private void OnMouseDown()
     {
-        HubControllerGameObject.GetComponent<HubController>().TriggerFade();
+        hubControllerGameObject.GetComponent<HubController>().TriggerFade();
         timerActive = true;
     }
 }

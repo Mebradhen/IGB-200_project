@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\EscToQuit.cs" />
     <Compile Include="Assets\ExitToScene.cs" />
+    <Compile Include="Assets\Fade\Fade_Scripts\SwapScenes.cs" />
     <Compile Include="Assets\Hub_Folder\Hub_Scripts\HubController.cs" />
     <Compile Include="Assets\Hub_Folder\Hub_Scripts\HubNavigationArrows.cs" />
     <Compile Include="Assets\Hub_Folder\Hub_Scripts\LookAtCamera.cs" />
@@ -79,34 +80,34 @@
     <Compile Include="Assets\MINI GAME FILES\Superhero Jump\Scripts\Moving_playercam.cs" />
     <Compile Include="Assets\MINI GAME FILES\Superhero Jump\Scripts\Player_Jump.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -292,13 +293,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>F:/Documents/Unity stuffz/IGB200/IGB-200_project/IGB-200_project/Star_light_game_team_16/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

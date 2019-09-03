@@ -132,14 +132,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartEnd_Main (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1932307724, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932307724, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6610395803431205928, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -195,6 +187,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1932307724, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932307724, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869827324, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 869827324, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 869827324, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1387375959, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1387375959, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1387375959, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2023727019, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2023727019, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2023727019, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4135136213829375732, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
         type: 3}
       propertyPath: effect_White
@@ -205,6 +241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: star_Timer_Value
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331291041757619391, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
+        type: 3}
+      propertyPath: sceneName
+      value: Main_Menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}

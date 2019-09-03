@@ -82,6 +82,7 @@ public class Script_title_srceen_buttons : MonoBehaviour
 
         if (timer < 0)
         {
+
             SceneManager.LoadScene(sceneName);
         }
     }

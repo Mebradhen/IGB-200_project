@@ -72,8 +72,11 @@ public class EventController : MonoBehaviour
     GameObject sliderStar2;
     [SerializeField]
     GameObject sliderStar3;
-    [SerializeField]
-    GameObject sliderStar_white;
+
+    //controlles the fade and scene swapping
+    GameObject SceneSwapper;
+
+
     private void Start()
     {
         //set the referecnce on start
@@ -86,6 +89,10 @@ public class EventController : MonoBehaviour
         oneStarTime = (star_Timer_Value_Reference / 4) * 1;
         twoStarTime = (star_Timer_Value_Reference / 4) * 2;
         threeStarTime = (star_Timer_Value_Reference / 4) * 3;
+
+        //getSceneSwapper
+        SceneSwapper = GameObject.FindGameObjectWithTag("SceneController");
+
     }
 
     // Update is called once per frame
@@ -140,11 +147,12 @@ public class EventController : MonoBehaviour
         foreach (var animator in animators)
             animator.GetComponent<Animator>().SetBool("MiniGameEnded", true);
 
-        //SwapScenes -= Time.deltaTime;
-        //if (SwapScenes <= 0)
-        if (Input.GetButtonDown("Fire1"))
+        SwapScenes -= Time.deltaTime;
+
+        if (Input.GetButtonDown("Fire1")|| SwapScenes <= 0)
         {
-            SceneManager.LoadScene(SceneToLoad);
+            SceneSwapper.GetComponent<SwapScenes>().returnToScene = true;
+            //SceneManager.LoadScene(SceneToLoad);
         }
     }
 }
