@@ -11,6 +11,14 @@ TagManager:
   - MiniGame
   - SceneController
   - DataManager
+  - Ball
+  - Paint_blue
+  - Paint_red
+  - Paint_green
+  - Dc_green
+  - Dc_blue
+  - DC_red
+  - Dector
   layers:
   - Default
   - TransparentFX

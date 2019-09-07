@@ -10,11 +10,21 @@ public class Ball_controller_script : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movementVector;
 
-    public GameObject paint_smoge;
+    public GameObject paint_smoge_green;
+
+    public GameObject paint_smoge_red;
+
+    public GameObject paint_smoge_blue;
 
     private float paint_wait = 0;
 
+    private float paint_height = 0;
+
     private GameObject gameController;
+
+    private GameObject the_paint_color;
+
+    private int the_colour_choosen = 0; 
 
     void Start()
     {
@@ -27,6 +37,8 @@ public class Ball_controller_script : MonoBehaviour
 
     void Update()
     {
+        the_color();
+
         EventController EC = gameController.GetComponent<EventController>();
         if (EC.miniGame_Start)
         {
@@ -65,8 +77,10 @@ public class Ball_controller_script : MonoBehaviour
             {
                 if (paint_wait > 1.0f)
                 {
+                    paint_height += 0.0001f * Time.deltaTime;
 
-                    Instantiate(paint_smoge, transform.position, transform.rotation);
+                    Instantiate(the_paint_color, new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.5f - paint_height), transform.rotation);
+
 
                     paint_wait = 0.00f;
                 }
@@ -74,4 +88,37 @@ public class Ball_controller_script : MonoBehaviour
 
         }
     }
+
+    void the_color()
+    {
+        if(Input.GetKey("joystick button 0"))
+        {
+            the_colour_choosen = 0;
+        }
+
+        if (Input.GetKey("joystick button 1"))
+        {
+            the_colour_choosen = 1;
+        }
+
+        if (Input.GetKey("joystick button 2"))
+        {
+            the_colour_choosen = 2;
+        }
+
+        switch (the_colour_choosen)
+        {
+            case 0:
+                the_paint_color = paint_smoge_green;
+                break;
+            case 1:
+                the_paint_color = paint_smoge_red;
+                break;
+            case 2:
+                the_paint_color = paint_smoge_blue;
+                break;
+        }
+
+    }
+    
 }
