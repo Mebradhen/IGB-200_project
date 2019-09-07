@@ -59,6 +59,13 @@ public class EventController : MonoBehaviour
     float twoStarTime;
     float threeStarTime;
 
+    [Header("CrossButton, JoyPad, ShoulderButton, DPad")]
+    [Header("SquareButton, CircleButton, TriangleButton,")]
+    [Header("Name DataName something from this list:")]
+
+    //this is the name of the data in the savedata script
+    [SerializeField]
+    string DataName = "Null";
 
 
     //this is the timer
@@ -75,6 +82,8 @@ public class EventController : MonoBehaviour
 
     //controlles the fade and scene swapping
     GameObject SceneSwapper;
+
+    bool endGameSingleCall = false;
 
 
     private void Start()
@@ -100,7 +109,13 @@ public class EventController : MonoBehaviour
     {
         //first check is the game has ended
         if (miniGame_Ended)
+        {
+            if (endGameSingleCall == false)
+            {
+                singleCallGameEnd();
+            }
             GameEnd();
+        }
 
 
 
@@ -142,6 +157,32 @@ public class EventController : MonoBehaviour
         return 3;
     }
 
+    public void singleCallGameEnd()
+    {
+        endGameSingleCall = true;
+
+        //find the dataholder then add the scopre to the data
+        GameObject dataHolder = GameObject.FindGameObjectWithTag("DataManager");
+        SaveData saveData = dataHolder.GetComponent<SaveData>();
+        //saveData.pathData
+
+        foreach (SaveData.MiniGamePathData minigame in saveData.pathData)
+        {
+            if (DataName == "Null")
+            {
+                print("change the Null value in the event controller script");
+            }
+
+            if (minigame.miniGamePath == DataName)
+            {
+                minigame.progression += stars_Achived;
+                break;
+            }
+        }
+
+        saveData.PrintData();
+    }
+
     public void GameEnd()
     {
         foreach (var animator in animators)
@@ -152,6 +193,7 @@ public class EventController : MonoBehaviour
         if (Input.GetButtonDown("Fire1")|| SwapScenes <= 0)
         {
             SceneSwapper.GetComponent<SwapScenes>().returnToScene = true;
+            
             //SceneManager.LoadScene(SceneToLoad);
         }
     }

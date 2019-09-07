@@ -13,13 +13,13 @@ public class Script_title_srceen_buttons : MonoBehaviour
     [SerializeField]
     string sceneName;
 
-    [SerializeField]
-    GameObject camera;
+    //[SerializeField]
+    GameObject mainCamera;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        mainCamera = Camera.main.gameObject;
     }
 
     // Update is called once per frame
@@ -76,7 +76,7 @@ public class Script_title_srceen_buttons : MonoBehaviour
 
     private void Start_menu_move()
     {
-        camera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_2", true);
+        mainCamera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_2", true);
 
         timer -= Time.deltaTime;
 
@@ -90,7 +90,7 @@ public class Script_title_srceen_buttons : MonoBehaviour
 
     private void option_menu_move()
     {
-        camera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_3", true);
+        mainCamera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_3", true);
 
         timer -= Time.deltaTime;
 
@@ -103,7 +103,7 @@ public class Script_title_srceen_buttons : MonoBehaviour
 
     private void reset_menu_move()
     {
-        camera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_4", true);
+        mainCamera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_4", true);
 
         timer -= Time.deltaTime;
 
@@ -117,7 +117,7 @@ public class Script_title_srceen_buttons : MonoBehaviour
 
     private void Reset_game_yes()
     {
-        camera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_4", false);
+        mainCamera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_4", false);
 
         //RESET CODE HERE!!
         timer = 2.0f;
@@ -126,7 +126,7 @@ public class Script_title_srceen_buttons : MonoBehaviour
 
     private void Reset_game_no()
     {
-        camera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_4", false);
+        mainCamera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_4", false);
 
         timer = 2.0f;
         timerActive = false;
@@ -134,7 +134,7 @@ public class Script_title_srceen_buttons : MonoBehaviour
 
     private void Controls_game_back()
     {
-        camera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_3", false);
+        mainCamera.GetComponent<Animator>().SetBool("Tile_screen_intro_move_3", false);
 
         timer = 2.0f;
         timerActive = false;

@@ -62,16 +62,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\EscToQuit.cs" />
-    <Compile Include="Assets\ExitToScene.cs" />
-    <Compile Include="Assets\Fade\Fade_Scripts\SwapScenes.cs" />
-    <Compile Include="Assets\Hub_Folder\Hub_Scripts\HubController.cs" />
-    <Compile Include="Assets\Hub_Folder\Hub_Scripts\HubNavigationArrows.cs" />
-    <Compile Include="Assets\Hub_Folder\Hub_Scripts\LookAtCamera.cs" />
-    <Compile Include="Assets\Hub_Folder\Hub_Scripts\MiniGameInteractions.cs" />
+    <Compile Include="Assets\MINI GAME FILES\_SaveDataFiles\DataClass.cs" />
+    <Compile Include="Assets\MINI GAME FILES\_SaveDataFiles\SaveData.cs" />
+    <Compile Include="Assets\MINI GAME FILES\_SceneFade\Fade_Scripts\SwapScenes.cs" />
     <Compile Include="Assets\MINI GAME FILES\_StartEnd_Folder\StartEnd_Scripts\AnimationEffects_Functions.cs" />
     <Compile Include="Assets\MINI GAME FILES\_StartEnd_Folder\StartEnd_Scripts\EventController.cs" />
     <Compile Include="Assets\MINI GAME FILES\_StartEnd_Folder\StartEnd_Scripts\SceneEffects.cs" />
+    <Compile Include="Assets\MINI GAME FILES\Hub_Folder\Hub_Scripts\HubController.cs" />
+    <Compile Include="Assets\MINI GAME FILES\Hub_Folder\Hub_Scripts\HubNavigationArrows.cs" />
+    <Compile Include="Assets\MINI GAME FILES\Hub_Folder\Hub_Scripts\LookAtCamera.cs" />
+    <Compile Include="Assets\MINI GAME FILES\Hub_Folder\Hub_Scripts\MiniGameInteractions.cs" />
+    <Compile Include="Assets\MINI GAME FILES\Menu\Menu_Scripts\EscToQuit.cs" />
+    <Compile Include="Assets\MINI GAME FILES\Menu\Menu_Scripts\ExitToScene.cs" />
+    <Compile Include="Assets\MINI GAME FILES\Menu\Menu_Scripts\Rotate.cs" />
     <Compile Include="Assets\MINI GAME FILES\Menu\Title_screen\Buttons_scripts\Script_title_srceen_buttons.cs" />
     <Compile Include="Assets\MINI GAME FILES\Menu\Title_screen\Script_camera.cs" />
     <Compile Include="Assets\MINI GAME FILES\PAINT GAME\Scripts\Ball_controller_script.cs" />
@@ -79,6 +82,7 @@
     <Compile Include="Assets\MINI GAME FILES\PAINT GAME\Scripts\mini_game_paint_detc.cs" />
     <Compile Include="Assets\MINI GAME FILES\Superhero Jump\Scripts\Moving_playercam.cs" />
     <Compile Include="Assets\MINI GAME FILES\Superhero Jump\Scripts\Player_Jump.cs" />
+    <Compile Include="Assets\NextScene.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Alex Fraser/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
