@@ -27,7 +27,7 @@ public class mini_game_paint_detc : MonoBehaviour
             the_object_out = paint_blue;
         }
 
-        if (transform.parent.tag == "Dc_red")
+        if (transform.parent.tag == "DC_red")
         {
             the_object_out = paint_red;
         }
@@ -40,7 +40,7 @@ public class mini_game_paint_detc : MonoBehaviour
 
         if (the_check == 0)
         {
-            if (other.tag == "Paint_red" && transform.parent.tag == "Dc_red")
+            if (other.tag == "Paint_red" && transform.parent.tag == "DC_red")
         {
                 the_check = 1;
 
