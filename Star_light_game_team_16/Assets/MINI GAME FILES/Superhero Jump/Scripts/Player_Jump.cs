@@ -9,7 +9,7 @@ public class Player_Jump : MonoBehaviour
     public bool ready = false;
     private bool moving = false;
     public float timeCheck;
-    public bool onGround = false;
+    public static bool onGround = false;
     public Vector2 movementVector;
     private Rigidbody2D rb;
     public float speed = 90;
@@ -17,12 +17,14 @@ public class Player_Jump : MonoBehaviour
     public Sprite sprite2;
     public Sprite sprite1;
     private SpriteRenderer spriteRenderer;
+    private GameObject gameObjects;
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         gameController = GameObject.FindGameObjectWithTag("GameController");
         rb = GetComponent<Rigidbody2D>();
+        gameObjects = GameObject.FindGameObjectWithTag("jumpBar");
     }
 
     // Update is called once per frame
@@ -30,9 +32,14 @@ public class Player_Jump : MonoBehaviour
     {
         if (onGround == true)
         {
+            gameObjects.SetActive(true);
             spriteRenderer.sprite = sprite1;
             movementVector.y = Input.GetAxis("Vertical");
             speed = (downTime - timeCheck) * 120;
+        }
+        else
+        {
+            gameObjects.SetActive(false);
         }
         Jump();
         if (moving == true)
@@ -42,11 +49,7 @@ public class Player_Jump : MonoBehaviour
             rb.AddForce(transform.up *speed);
             moving = false;
         }
-        else
-        {
-            
-            
-        }
+       
     }
 
     void Jump()
