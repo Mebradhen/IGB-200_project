@@ -42,6 +42,10 @@ public class EventController : MonoBehaviour
     public
     int stars_Achived;
 
+    //a timer that stops the end screen from displaying. Set for the correct value needed
+    public
+    float SceneEndTime = 0.0f;
+
     //howlong before the scene swaps defult 2
     [SerializeField]
     float SwapScenes = 2;
@@ -114,7 +118,17 @@ public class EventController : MonoBehaviour
             {
                 singleCallGameEnd();
             }
-            GameEnd();
+
+            // check to see if the SceneEndTime var is at 0 
+            if (SceneEndTime <= 0.0f)
+            {
+                GameEnd();
+            }
+            else
+            {
+                SceneEndTime -= Time.deltaTime;
+            }
+
         }
 
 

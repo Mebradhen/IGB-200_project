@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Minigames/PAINT_GAMES/Paint_ball_3.unity
+- path: Assets/Scenes/Main_menu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

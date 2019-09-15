@@ -19,6 +19,8 @@ TagManager:
   - Dc_blue
   - DC_red
   - Dector
+  - Clover
+  - clover_stalks
   layers:
   - Default
   - TransparentFX
