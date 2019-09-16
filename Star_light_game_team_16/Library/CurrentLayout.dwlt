@@ -116,7 +116,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 444}
   m_MaxSize: {x: 22012, y: 10022}
   vertical: 0
-  controlID: 30409
+  controlID: 103
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 444}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 30473
+  controlID: 60
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 273}
   m_MaxSize: {x: 4004, y: 8044}
   vertical: 1
-  controlID: 30410
+  controlID: 104
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -437,14 +437,14 @@ MonoBehaviour:
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.07897099, y: 5.178318, z: 7.526788}
+    m_Target: {x: -1.056941, y: 1.037059, z: 5.1335044}
     speed: 2
-    m_Value: {x: 0.07897099, y: 5.178318, z: 7.526788}
+    m_Value: {x: -1.056941, y: 1.037059, z: 5.1335044}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -465,25 +465,25 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
-    m_Target: {x: 0.012024147, y: -0.109532304, z: 0.0023419526, w: -0.99434793}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.012018889, y: -0.109484404, z: 0.0023409284, w: -0.9939131}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.3778715
+    m_Target: 11.828092
     speed: 2
-    m_Value: 5.6778717
+    m_Value: 11.828092
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 2
     m_SpeedNormalized: 1
@@ -497,7 +497,7 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0.20309983, y: -0.2420129, z: 0.048693947, w: 0.9479042}
+  m_LastSceneViewRotation: {x: 0.012024147, y: -0.109532304, z: 0.0023419526, w: -0.99434793}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -985,7 +985,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 082dfeff682dfeffbc2efeffbe2efeff3238feff3438feff9e3afeff763efeff783efeffaa47feffcc47feff8c48feff4c49feff1e4afeff8a4bfeff8696feffa896feff6097feff6e98feff14b1feff84b2feff8eb2feffd0b3feffd2b3feff2cb5feff2eb5feff7eb6feff88b6feffb6b7feffb8b7feffdeb8feff3ac5feff70c5feffa4c6feff4408ffff461fffff5028ffff2e3fffff76a9ffffaaaaffffeaaaffff0cacffff4cacffff16b0ffffe2b1ffff76f7ffff0638000088400000aeca0000fcca0000
+      m_ExpandedIDs: 28f2ffff2af5ffff2a3b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1001,7 +1001,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 11}
+        m_ClientGUIView: {fileID: 10}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1072,19 +1072,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Minigames/PAINT_GAMES
+    - Assets/MINI GAME FILES/MINGAMES/Superhero Jump/Scripts
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Brads Game Dev\Documents\GitHub\IGB-200_project\Star_light_game_team_16
+  m_LastProjectPath: E:\Documents\Unity stuffz\IGB200\Bork\Project\IGB-200_project\Star_light_game_team_16
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b8300000
     m_LastClickedID: 12472
-    m_ExpandedIDs: ffffffff000000005a3000002c3100004431000058320000823300008a330000b8330000183400002034000054340000d8340000f03500000c3600002c36000038360000d2360000de360000ea360000f236000008370000463700004e3700008e370000c23a0000c43a0000c63a00001e420000364400005644000088440000
+    m_ExpandedIDs: 0000000088330000563400006e3400007e350000dc3500009e360000a6360000d03600002a3700003237000066370000e4370000f6380000f8380000143900003439000040390000de390000ea390000f6390000fe390000143a00004c3a0000543a00005c3a0000643a00009e3a0000883d00008a3d00008c3d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1112,23 +1112,23 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000005a3000002c3100004431000058320000823300008a330000b8330000183400002034000054340000d8340000f03500000c3600002c36000038360000d2360000de360000ea360000f236000008370000463700004e3700008e370000c23a0000c43a0000c63a00001e420000364400005644000088440000
+    m_ExpandedIDs: ffffffff0000000088330000563400006e3400007e350000dc35000032360000a6360000d03600002a3700003237000066370000e43700006e380000f6380000f8380000143900003439000040390000ea390000f6390000143a0000543a00005c3a00009e3a0000883d00008a3d00008c3d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: MG_Breath and blow 2
-      m_OriginalName: MG_Breath and blow 2
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 38424
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 11}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}

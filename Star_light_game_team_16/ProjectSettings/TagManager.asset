@@ -21,6 +21,8 @@ TagManager:
   - Dector
   - Clover
   - clover_stalks
+  - jumpBar
+  - removable
   layers:
   - Default
   - TransparentFX
