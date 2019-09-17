@@ -13,11 +13,32 @@ EditorBuildSettings:
     guid: 02d9ec37de91d1d4cb771b97627a996b
   - enabled: 1
     path: Assets/Scenes/Main_menu.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: ba92f816edfe7eb4aad4035ec4e35252
   - enabled: 1
     path: Assets/Scenes/Minigames/PAINT_GAMES/Paint_ball_1.unity
     guid: 5178ce3d79a4c5a48944d5dc231acd6c
   - enabled: 1
-    path: Assets/Scenes/Minigames/Jump_Man.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Minigames/PAINT_GAMES/Paint_ball_2.unity
+    guid: 6953f3335124b8144b3844ca355945cb
+  - enabled: 1
+    path: Assets/Scenes/Minigames/PAINT_GAMES/Paint_ball_3.unity
+    guid: d2c29f42d63263849a3390a6a9f38dd7
+  - enabled: 1
+    path: Assets/Scenes/Minigames/SuperHero_Jump/Jump_Man_1.unity
+    guid: e0b7e4f0313e8634a839745e56842559
+  - enabled: 1
+    path: Assets/Scenes/Minigames/SuperHero_Jump/Jump_Man_2.unity
+    guid: a7333def207e92a40aa509932a260475
+  - enabled: 1
+    path: Assets/Scenes/Minigames/SuperHero_Jump/Jump_Man_3.unity
+    guid: c25fc70896f43af448697bc83a969df4
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Breath and blow/Breath_and_Blow_1.unity
+    guid: fded80e22a11a7d4db24a2ab1ab68428
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Breath and blow/Breath_and_Blow_2.unity
+    guid: a8cacbedf47463949ad03a3126f139e1
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Breath and blow/Breath_and_Blow_3.unity
+    guid: 94b5d4ac8fc37cc47a6edaaf93c86a6d
   m_configObjects: {}

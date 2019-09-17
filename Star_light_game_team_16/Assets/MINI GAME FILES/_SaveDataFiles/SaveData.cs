@@ -43,6 +43,7 @@ public class SaveData : MonoBehaviour
         pathData.Add(new MiniGamePathData("TriangleButton"));
         pathData.Add(new MiniGamePathData("CrossButton"));
         pathData.Add(new MiniGamePathData("JoyPad"));
+        pathData.Add(new MiniGamePathData("JoyPad2"));
         pathData.Add(new MiniGamePathData("ShoulderButton"));
         pathData.Add(new MiniGamePathData("DPad"));
 
@@ -58,4 +59,18 @@ public class SaveData : MonoBehaviour
             print("miniGamePath: " + minigame.miniGamePath + "\n minigame progression: " + minigame.progression);
         }
     }
+
+    public int FindDataFromName(string dataName)
+    {
+        foreach (MiniGamePathData minigame in pathData)
+        {
+            if (minigame.miniGamePath == dataName)
+            {
+                return minigame.progression;
+            }
+            
+        }
+        return -1;
+    }
+
 }

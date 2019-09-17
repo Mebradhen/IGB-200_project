@@ -457,7 +457,7 @@ PrefabInstance:
     - target: {fileID: 5563764391501086894, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
         type: 3}
       propertyPath: DataName
-      value: TriangleButton
+      value: JoyPad2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
@@ -1044,7 +1044,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &846133204
 MonoBehaviour:
   m_ObjectHideFlags: 0
