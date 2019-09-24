@@ -363,6 +363,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 1614103480, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614103480, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 4135136212768998538, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
         type: 3}
       propertyPath: m_IsActive
@@ -407,6 +415,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8414746228314114265, guid: ff2ec9fbfa7deef4b8e6fa40a6b2526d,
         type: 3}
+    - target: {fileID: 4135136213829375732, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
+        type: 3}
+      propertyPath: effect_star_total
+      value: 
+      objectReference: {fileID: 1968896355445148772, guid: 73a009093672405418e68d62ac11c300,
+        type: 3}
+    - target: {fileID: 4135136213829375732, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
+        type: 3}
+      propertyPath: effect_Star1
+      value: 
+      objectReference: {fileID: 7163580678231856476, guid: 17daffd2b0fb4684296032f241271879,
+        type: 3}
+    - target: {fileID: 4135136213829375732, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
+        type: 3}
+      propertyPath: effect_Star2
+      value: 
+      objectReference: {fileID: 6295965931558041818, guid: 70a9d885d9b5da64298ed44b7f7882c7,
+        type: 3}
+    - target: {fileID: 4135136213829375732, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
+        type: 3}
+      propertyPath: effect_Star3
+      value: 
+      objectReference: {fileID: 3429970926536982766, guid: 203a3f634c2ec3644b65576deef82f5f,
+        type: 3}
     - target: {fileID: 5563764391501086894, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
         type: 3}
       propertyPath: star_Timer_Value
@@ -417,10 +449,31 @@ PrefabInstance:
       propertyPath: SwapScenes
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 5563764391501086894, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
+        type: 3}
+      propertyPath: miniGame_Ended
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7331291041757619379, guid: b6e9b26ceb3177a4d8408fb36dfb3706,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 318340290, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 318340290, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 910462956, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 910462956, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6e9b26ceb3177a4d8408fb36dfb3706, type: 3}

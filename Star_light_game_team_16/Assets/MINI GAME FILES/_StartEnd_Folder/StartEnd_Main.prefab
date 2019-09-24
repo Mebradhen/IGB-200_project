@@ -1327,17 +1327,19 @@ MonoBehaviour:
   star_Achived: 0
   effect_Ready: {fileID: 4315538440112810001, guid: 4e4e6470d70d8b344b1be243e1322a1a,
     type: 3}
-  effect_Start: {fileID: 4315538440112810001, guid: d57372b9e69c2f74dadbe3de046fc8a1,
+  effect_Start: {fileID: 3429970926536982766, guid: 9aca8cad4a0b8f94692eb7545bbe0f16,
     type: 3}
   effect_Great: {fileID: 2237306684721011008, guid: e8fc4943842147b4ea1f6a3848b7dbca,
     type: 3}
-  effect_Star1: {fileID: 3429970926536982766, guid: 9aca8cad4a0b8f94692eb7545bbe0f16,
+  effect_Star1: {fileID: 7163580678231856476, guid: 17daffd2b0fb4684296032f241271879,
     type: 3}
-  effect_Star2: {fileID: 7163580678231856476, guid: 17daffd2b0fb4684296032f241271879,
+  effect_Star2: {fileID: 6295965931558041818, guid: 70a9d885d9b5da64298ed44b7f7882c7,
     type: 3}
-  effect_Star3: {fileID: 6295965931558041818, guid: 70a9d885d9b5da64298ed44b7f7882c7,
+  effect_Star3: {fileID: 3429970926536982766, guid: 203a3f634c2ec3644b65576deef82f5f,
     type: 3}
-  effect_Exit: {fileID: 2137785686148066121, guid: a955ad06f01b52d459f8f07020dbc800,
+  effect_Exit: {fileID: 8414746228314114265, guid: ff2ec9fbfa7deef4b8e6fa40a6b2526d,
+    type: 3}
+  effect_star_total: {fileID: 1968896355445148772, guid: 73a009093672405418e68d62ac11c300,
     type: 3}
 --- !u!1 &5563764391501086895
 GameObject:

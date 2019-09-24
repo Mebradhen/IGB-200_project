@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Data.unity
+- path: Assets/MINI GAME FILES/_StartEnd_Folder/StartEnd_TestScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
