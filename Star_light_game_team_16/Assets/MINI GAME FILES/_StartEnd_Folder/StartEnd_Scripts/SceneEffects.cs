@@ -23,9 +23,7 @@ public class SceneEffects : MonoBehaviour
     [SerializeField]
     GameObject effect_Star3;
     [SerializeField]
-    GameObject effect_Exit;
-    [SerializeField]
-    GameObject effect_star_total;
+    GameObject effect_star_bg;
 
     private void Start()
     {
@@ -47,13 +45,17 @@ public class SceneEffects : MonoBehaviour
         Instantiate(effect_Great, miniGameController.transform);
     }
 
-    void PlayEffect_Star()
+    void PlayEffect_BG()
+    {
+        Instantiate(effect_star_bg, miniGameController.transform);
+    }
+
+        void PlayEffect_Star()
     {
 
         star_Achived = miniGameController.GetComponent<EventController>().stars_Achived;
-        Instantiate(effect_Exit, miniGameController.transform);
-        Instantiate(effect_star_total, miniGameController.transform);
-        
+
+  
 
         if (star_Achived == 1)
         {

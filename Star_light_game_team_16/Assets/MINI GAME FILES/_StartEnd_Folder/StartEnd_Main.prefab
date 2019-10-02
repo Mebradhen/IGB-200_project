@@ -1337,9 +1337,7 @@ MonoBehaviour:
     type: 3}
   effect_Star3: {fileID: 3429970926536982766, guid: 203a3f634c2ec3644b65576deef82f5f,
     type: 3}
-  effect_Exit: {fileID: 8414746228314114265, guid: ff2ec9fbfa7deef4b8e6fa40a6b2526d,
-    type: 3}
-  effect_star_total: {fileID: 1968896355445148772, guid: 73a009093672405418e68d62ac11c300,
+  effect_star_bg: {fileID: 1968896355445148772, guid: 73a009093672405418e68d62ac11c300,
     type: 3}
 --- !u!1 &5563764391501086895
 GameObject:
