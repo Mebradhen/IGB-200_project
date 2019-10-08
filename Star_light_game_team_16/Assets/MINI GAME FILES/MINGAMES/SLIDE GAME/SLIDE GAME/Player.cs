@@ -10,36 +10,42 @@ public class Player : MonoBehaviour
 
     private Rigidbody rb;
     private Vector3 endPosition = new Vector3(-80, 0, 0);
+    [SerializeField]
+    GameObject gameController;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        gameController = GameObject.FindGameObjectWithTag("GameController");
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody>().velocity = transform.up * movementSpeed;
-
-        if (Input.GetKeyDown(KeyCode.W))
+        if (gameController.GetComponent<EventController>().miniGame_Start == true)
         {
-           transform.position = new Vector3(-12, transform.position.y, transform.position.z);
-        }
+            GetComponent<Rigidbody>().velocity = transform.up * movementSpeed;
 
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            transform.position = new Vector3(6, transform.position.y, transform.position.z);
-        }
+            if (Input.GetButtonDown("Fire2"))
+            {
+                transform.position = new Vector3(-12, transform.position.y, transform.position.z);
+            }
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            transform.position = new Vector3(24, transform.position.y, transform.position.z);
-        }
+            if (Input.GetButtonDown("Fire1"))
+            {
+                transform.position = new Vector3(6, transform.position.y, transform.position.z);
+            }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            transform.position = new Vector3(42, transform.position.y, transform.position.z);
+            if (Input.GetButtonDown("Fire3"))
+            {
+                transform.position = new Vector3(24, transform.position.y, transform.position.z);
+            }
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                transform.position = new Vector3(42, transform.position.y, transform.position.z);
+            }
         }
     }
 
@@ -52,6 +58,10 @@ public class Player : MonoBehaviour
             print("tag check worked");
             Destroy(other.gameObject);
             movementSpeed += 2;
+        }
+        if (other.gameObject.tag == "MainStar")
+        {
+            gameController.GetComponent<EventController>().miniGame_Ended = true;
         }
     }
 

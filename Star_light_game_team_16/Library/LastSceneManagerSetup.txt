@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Minigames/PAINT_GAMES/Paint_ball_1.unity
+- path: Assets/MINI GAME FILES/MINGAMES/SLIDE GAME/SLIDE GAME/slideride2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

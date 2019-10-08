@@ -23,6 +23,12 @@ TagManager:
   - clover_stalks
   - jumpBar
   - removable
+  - Star
+  - gate1
+  - gate 2
+  - gate3
+  - gate2
+  - MainStar
   layers:
   - Default
   - TransparentFX

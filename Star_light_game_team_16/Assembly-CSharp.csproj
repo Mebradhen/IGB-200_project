@@ -4,20 +4,18 @@
     <LangVersion>latest</LangVersion>
     <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.1.14f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
     <CscToolExe>unity_csc.bat</CscToolExe>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{730C3995-B9D3-42CA-03F7-34EF254EF779}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -86,6 +84,9 @@
     <Compile Include="Assets\MINI GAME FILES\MINGAMES\PAINT GAME\Scripts\Ball_controller_script.cs" />
     <Compile Include="Assets\MINI GAME FILES\MINGAMES\PAINT GAME\Scripts\main_count.cs" />
     <Compile Include="Assets\MINI GAME FILES\MINGAMES\PAINT GAME\Scripts\mini_game_paint_detc.cs" />
+    <Compile Include="Assets\MINI GAME FILES\MINGAMES\SLIDE GAME\SLIDE GAME\ColorBlinker.cs" />
+    <Compile Include="Assets\MINI GAME FILES\MINGAMES\SLIDE GAME\SLIDE GAME\level1player.cs" />
+    <Compile Include="Assets\MINI GAME FILES\MINGAMES\SLIDE GAME\SLIDE GAME\Player.cs" />
     <Compile Include="Assets\MINI GAME FILES\MINGAMES\Superhero Jump\Scripts\JumpBar.cs" />
     <Compile Include="Assets\MINI GAME FILES\MINGAMES\Superhero Jump\Scripts\Moving_playercam.cs" />
     <Compile Include="Assets\MINI GAME FILES\MINGAMES\Superhero Jump\Scripts\Player_Jump.cs" />
