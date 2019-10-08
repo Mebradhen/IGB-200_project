@@ -1,0 +1,6 @@
+sceneSetups:
+- path: C:/Users/benny/Documents/GitHub/IGB-200_project/Star_light_game_team_16/Assets/MINI
+    GAME FILES/MINGAMES/SLIDE GAME/SLIDE GAME/slideride1.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
